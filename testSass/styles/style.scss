@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./header";
+
+.contact {
+  @extend header;
+  @include flexCenter(column, $bgRed);
+}
+
+.card {
+  @include flexCenter(column, $bgRed);
+  .card__btn {
+    @include btn($bgBlue, $bgRed);
+  }
+  &--dark {
+    .card__btn {
+      @include btn($coral, $primaryBtn);
+    }
+  }
+}

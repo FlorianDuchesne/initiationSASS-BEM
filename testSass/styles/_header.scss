@@ -1,0 +1,31 @@
+@mixin flexCenter($direction, $background) {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background: $background;
+}
+
+@mixin btn($color, $hoverColor) {
+  background: $color;
+  &:hover {
+    background: $hoverColor;
+  }
+}
+
+header {
+  @include flexCenter(row, $bgBlue);
+
+  color: $textColor;
+  button {
+    @include btn($primaryBtn, $coral);
+    // background: $primaryBtn;
+    // &:hover {
+    //   background: lightcoral;
+    // }
+    background::after {
+      content: "\00f8";
+    }
+  }
+}

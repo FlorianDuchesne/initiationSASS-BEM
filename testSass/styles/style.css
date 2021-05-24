@@ -1,0 +1,83 @@
+header, .contact {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #1e4f66;
+  color: #6b6568;
+}
+
+header button, .contact button {
+  background: #9c0d50;
+}
+
+header button:hover, .contact button:hover {
+  background: lightcoral;
+}
+
+header button background::after, .contact button background::after {
+  content: "\00f8";
+}
+
+.contact {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #681111;
+}
+
+.card {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #681111;
+}
+
+.card .card__btn {
+  background: #1e4f66;
+}
+
+.card .card__btn:hover {
+  background: #681111;
+}
+
+.card--dark .card__btn {
+  background: lightcoral;
+}
+
+.card--dark .card__btn:hover {
+  background: #9c0d50;
+}
+/*# sourceMappingURL=style.css.map */
